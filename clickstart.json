@@ -1,0 +1,25 @@
+{
+    "id": "spring-load-time-weaving-clickstart",
+    "name": "Spring AspectJ Load Time Weaving with Tomcat7",
+    "source": "git://github.com/CloudBees-community/spring-load-time-weaving-clickstart.git",
+    "description" : "Spring AspectJ Load Time Weaving with Tomcat7",
+    "doc-url" : "https://github.com/CloudBees-community/spring-load-time-weaving-clickstart/blob/master/README.md",
+    "app-package": "http://repository-community.forge.cloudbees.com/snapshot/com/cloudbees/demo/spring-load-time-weaving-clickstart/1.0.0-SNAPSHOT/spring-load-time-weaving-clickstart-1.0.0-20130506.192523-1.war",
+    "icon" : "https://raw.github.com/CloudBees-community/spring-load-time-weaving-clickstart/master/clickstart-icon.png",
+
+    "supported-by" : "cloudbees",
+    "order" : 100,
+
+    "runtime": {
+        "type": "tomcat7",
+        "app-parameters" : {
+            "runtime.PLUGIN.SRC.tomcat7": "https://s3.amazonaws.com/cloudbees-clickstack/unstable/tomcat7-06aa6cc.zip"
+        }
+
+    },
+    "build-with-jenkins": {
+        "template": {
+            "type": "maven"
+        }
+    }
+}
