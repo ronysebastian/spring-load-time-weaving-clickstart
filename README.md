@@ -1,11 +1,19 @@
 # Spring Load Time Weaving Clickstart
 
-Demo app to show:
+This is a "ClickStart" that gets you going with a "Spring & AspectJ Load-time weaving in tomcat7" _seed_ project starting point. You can launch it here:
 
-* How to add a jar to a CloudBees container (Tomcat7, Glassfish3, Glassfish4) classpath via the `$WAR_HOME/META-INF/lib` folder
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/spring-load-time-weaving-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
+
+This will setup a continuous deployment pipeline - a CloudBees Git repository, a Jenkins build compiling and running the test suite (on each commit).
+Should the build succeed, this seed app is deployed on a Tomcat 7 container.
+
+You will see in this _seed_
+
+* How to add a jar to the classpath of your CloudBees container (Tomcat7 - `$TOMCAT_HOME/lib`, Glassfish3, Glassfish4) via the `$WAR_HOME/META-INF/lib` folder of your war file
 * How to use [9.8.4 Load-time weaving with AspectJ in the Spring Framework](http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/aop.html#aop-aj-ltw) on a Tomcat7 CloudBees container (this would also apply to CloudBees' Glassfish 3 and 4 containers)
 
-To add a jar to the classpath of your CloudBees container (directly under `$TOMCAT_HOME/lib`, ...), you must add it to the `$WAR_HOME/META-INF/lib` folder of your WAR file.
+
+# How to add a jar to a CloudBees container with Maven
 
 Sample with Maven and `spring-instrument-tomcat-3.2.3.RELEASE.jar`
 
