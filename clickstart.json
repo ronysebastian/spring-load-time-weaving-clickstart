@@ -11,10 +11,7 @@
     "order" : 100,
 
     "runtime": {
-        "type": "tomcat7",
-        "app-parameters" : {
-            "runtime.PLUGIN.SRC.tomcat7": "https://s3.amazonaws.com/cloudbees-clickstack/unstable/tomcat7-06aa6cc.zip"
-        }
+        "type": "tomcat7"
 
     },
     "build-with-jenkins": {
