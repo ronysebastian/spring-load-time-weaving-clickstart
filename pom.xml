@@ -21,7 +21,7 @@
     <name>spring-load-time-weaving-clickstart</name>
     <description>Clickstart demo of Spring Load Time Weaving</description>
     <packaging>war</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <url>https://github.com/CloudBees-community/spring-load-time-weaving-clickstart</url>
     <dependencies>
         <!-- Spring -->
@@ -221,7 +221,7 @@
     </developers>
     <scm>
         <connection>scm:git:https://github.com/CloudBees-community/spring-load-time-weaving-clickstart.git</connection>
-      <tag>spring-load-time-weaving-clickstart-1.0.0</tag>
+      <tag>HEAD</tag>
   </scm>
     <distributionManagement>
         <repository>
