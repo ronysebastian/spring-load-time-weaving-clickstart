@@ -24,11 +24,6 @@
     <packaging>war</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <url>https://github.com/CloudBees-community/spring-load-time-weaving-clickstart</url>
-    <scm>
-        <connection>scm:git:git@github.com:CloudBees-community/spring-load-time-weaving-clickstart.git</connection>
-        <developerConnection>scm:git:git@github.com:CloudBees-community/spring-load-time-weaving-clickstart.git
-        </developerConnection>
-    </scm>
     <dependencies>
         <!-- Spring -->
         <dependency>
@@ -207,6 +202,13 @@
                 </configuration>
             </plugin>
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav</artifactId>
+                <version>1.0-beta-2</version>
+            </extension>
+        </extensions>
     </build>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -218,7 +220,20 @@
             <email>cleclerc@cloudbees.com</email>
         </developer>
     </developers>
-
+    <scm>
+        <connection>scm:git:https://github.com/CloudBees-community/spring-load-time-weaving-clickstart.git</connection>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>community-release</id>
+            <url>dav:https://repository-community.forge.cloudbees.com/release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>community-snapshot</id>
+            <url>dav:https://repository-community.forge.cloudbees.com/snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+	
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
