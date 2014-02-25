@@ -70,6 +70,24 @@ Sample with Maven and `spring-instrument-tomcat-3.2.8.RELEASE.jar`
 </project>
 ```
 
+# How to use the Tomcat Load Time Weaver for Spring Framework
+
+To use Load Time Weaving with AspectJ in a Spring Tomcat application on CloudBees, please do the following:
+
+* Declare in `$WAR_HOME/META-INF/context.xml`
+
+ ```xml
+<Context>
+    <Loader loaderClass="org.springframework.instrument.classloading.tomcat.TomcatInstrumentableClassLoader"/>
+</Context>
+```
+
+* Add `spring-instrument-tomcat-${spring.version}.jar` to `$WAR_HOME/META-INF/lib/` as described above.
+
+
+Reference: [9. Aspect Oriented Programming with Spring > 9.8 Using AspectJ with Spring applications > 9.8.4 Load-time weaving with AspectJ in the Spring Framework > Environment-specific configuration > Tomcat](http://docs.spring.io/spring/docs/3.2.8.RELEASE/spring-framework-reference/html/aop.html#aop-aj-ltw-environment-tomcat)
+
+
 # References
 
 * [9.8.4 Load-time weaving with AspectJ in the Spring Framework](http://static.springsource.org/spring/docs/3.2.x/spring-framework-reference/html/aop.html#aop-aj-ltw)
