@@ -15,7 +15,7 @@ You will see in this _seed_
 
 # How to add a jar to a CloudBees container with Maven
 
-Sample with Maven and `spring-instrument-tomcat-3.2.3.RELEASE.jar`
+Sample with Maven and `spring-instrument-tomcat-3.2.8.RELEASE.jar`
 
 ```xml
 <project>
@@ -23,7 +23,7 @@ Sample with Maven and `spring-instrument-tomcat-3.2.3.RELEASE.jar`
         <plugins>
           <plugin>
                 <!--
-                (1) Copy spring-instrument-tomcat-3.2.3.RELEASE.jar to 'target/tomcat-extra-lib' folder during 'prepare-package' phase
+                (1) Copy spring-instrument-tomcat-3.2.8.RELEASE.jar to 'target/tomcat-extra-lib' folder during 'prepare-package' phase
                 -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -33,7 +33,7 @@ Sample with Maven and `spring-instrument-tomcat-3.2.3.RELEASE.jar`
                         <artifactItem>
                             <groupId>org.springframework.</groupId>
                             <artifactId>spring-instrument-tomcat</artifactId>
-                            <version>3.2.3.RELEASE</version>
+                            <version>3.2.8.RELEASE</version>
                             <type>jar</type>
                             <outputDirectory>${project.build.directory}/tomcat-extra-lib
                             </outputDirectory>
