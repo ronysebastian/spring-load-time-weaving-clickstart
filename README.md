@@ -70,7 +70,7 @@ Sample with Maven and `spring-instrument-tomcat-3.2.8.RELEASE.jar`
 </project>
 ```
 
-# How to use the Tomcat Load Time Weaver for Spring Framework
+# Using AspectJ Load Time Weaving for Spring Framework on CloudBees Tomcat 7
 
 To use Load Time Weaving with AspectJ in a Spring Tomcat application on CloudBees, please do the following:
 
