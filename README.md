@@ -51,7 +51,7 @@ Sample with Maven and `spring-instrument-tomcat-3.2.8.RELEASE.jar`
             </plugin>
             <plugin>
                 <!--
-                (1) Copy the content of the folder 'target/tomcat-extra-lib' in '$WAR_HOME/META-INF/lib'
+                (2) Copy the content of the folder 'target/tomcat-extra-lib' in '$WAR_HOME/META-INF/lib'
                 -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
